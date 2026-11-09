@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Free Computation Foundation — Computation should be free</title>
-<meta name="description" content="The Free Computation Foundation promotes the freedom to compute: to run any computation, on your own machine, offline, verifiably, and without rent or permission. The free software movement freed the code. We free the computing.">
+<meta name="description" content="The Free Computation Foundation promotes the freedom to compute: any computation, on your own machine, offline, verifiably — without rent, accounts, or permission.">
 <link rel="canonical" href="https://freecomputation.org/">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#f7f3ea">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0a0e0c">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Free Computation Foundation">
 <meta property="og:title" content="Free Computation Foundation — Computation should be free">
-<meta property="og:description" content="The free software movement freed the code. We free the computing: local, offline, verifiable, unrented.">
+<meta property="og:description" content="The freedom to compute: on your own machine, offline, verifiably, without rent or permission.">
 <meta property="og:url" content="https://freecomputation.org/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Free Computation Foundation">
 <meta name="twitter:description" content="The freedom to compute: on your own machine, offline, verifiably, without rent or permission.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314352b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23f7f3ea' text-anchor='middle'%3E%C6%92%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0e0c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23e8b33a' text-anchor='middle'%3E%C6%92%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,65 +39,175 @@
 </script>
 <style>
   :root{
-    --paper:#f7f3ea; --paper2:#efe8d8; --ink:#1c2420; --dim:#5c665f;
-    --line:#d8d0bc; --accent:#14352b; --accent2:#b07d2b; --card:#fffdf7;
+    --bg:#0a0e0c; --bg2:#0e130f; --panel:#111713; --panel2:#151d17;
+    --ink:#ece7d9; --dim:#9aa294; --faint:#5f6a60;
+    --line:#232b24; --line2:#2e382f;
+    --amber:#e8b33a; --green:#5ad97e; --red:#e06c5a;
+    --mono:ui-monospace,'SF Mono','Cascadia Mono',Menlo,Consolas,monospace;
+    --sans:ui-sans-system,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    --serif:Georgia,'Iowan Old Style','Times New Roman',serif;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:Georgia,'Iowan Old Style','Times New Roman',serif;
-    font-size:18px;line-height:1.65}
-  a{color:var(--accent);text-decoration-color:var(--accent2);text-underline-offset:3px}
-  a:hover{color:#000}
-  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
-  header{border-bottom:1px solid var(--line);background:var(--paper)}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:bold;letter-spacing:.02em}
-  .mark{width:40px;height:40px;border-radius:9px;background:var(--accent);color:var(--paper);
-    display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1}
-  nav a{margin-left:20px;font-size:15px;font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif}
-  .hero{padding:84px 0 64px;text-align:center}
-  .kicker{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:13px;
-    letter-spacing:.28em;text-transform:uppercase;color:var(--accent2);margin:0 0 18px}
-  h1{font-size:56px;line-height:1.08;margin:0 0 20px;font-weight:normal}
-  h1 em{font-style:italic;color:var(--accent)}
-  .lede{font-size:21px;color:var(--dim);max-width:740px;margin:0 auto 34px}
-  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .btn{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:16px;
-    padding:12px 26px;border-radius:999px;border:1px solid var(--accent);text-decoration:none}
-  .btn.solid{background:var(--accent);color:var(--paper)}
-  .btn.solid:hover{background:#0c241c;color:var(--paper)}
-  section{padding:56px 0;border-top:1px solid var(--line)}
-  h2{font-size:34px;font-weight:normal;margin:0 0 10px}
-  h2 em{color:var(--accent);font-style:italic}
-  .sub{color:var(--dim);max-width:720px;margin:0 0 34px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
-  .card h3{margin:0 0 8px;font-size:21px;font-weight:normal}
-  .card p{margin:0;color:var(--dim);font-size:16.5px}
-  .card .tag{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:12px;
-    letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);display:block;margin-bottom:10px}
-  .freedoms{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-  .freedom{background:var(--accent);color:#e9e2cf;border-radius:14px;padding:26px}
-  .freedom .num{font-size:13px;letter-spacing:.2em;color:#c9a44e;font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif}
-  .freedom h3{margin:8px 0;font-size:21px;font-weight:normal;color:#fff}
-  .freedom p{margin:0;font-size:16px;color:#cfd6c9}
-  table{width:100%;border-collapse:collapse;font-size:16.5px}
-  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)}
-  td:first-child{font-style:italic;white-space:nowrap}
-  footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--dim);font-size:15.5px}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+    font-size:17px;line-height:1.6;overflow-x:hidden}
+  ::selection{background:var(--amber);color:#0a0e0c}
+  a{color:var(--amber);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:3px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative}
+
+  /* ---------- top bar ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(10,14,12,.88);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.01em;font-size:17px}
+  .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:#0a0e0c;
+    display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:25px;line-height:1}
+  .brand small{display:block;font-family:var(--mono);font-weight:400;font-size:10px;
+    letter-spacing:.24em;color:var(--faint);text-transform:uppercase}
+  nav{display:flex;gap:22px;flex-wrap:wrap}
+  nav a{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+  nav a:hover{color:var(--amber);text-decoration:none}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:88px 0 0;overflow:hidden;
+    background:
+      radial-gradient(900px 480px at 85% -10%, rgba(232,179,58,.10), transparent 60%),
+      radial-gradient(700px 500px at 8% 110%, rgba(90,217,126,.07), transparent 60%),
+      var(--bg)}
+  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:
+      linear-gradient(rgba(236,231,217,.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(236,231,217,.045) 1px, transparent 1px);
+    background-size:56px 56px;
+    mask-image:radial-gradient(ellipse 90% 70% at 50% 30%, #000 30%, transparent 75%)}
+  .tape{font-family:var(--mono);font-size:13px;color:var(--faint);white-space:nowrap;
+    overflow:hidden;opacity:.55;user-select:none;pointer-events:none}
+  .tape span{display:inline-block;padding-right:48px;animation:slide 46s linear infinite}
+  .tape.rev span{animation-direction:reverse;animation-duration:58s}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .kicker{font-family:var(--mono);font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--green);margin:34px 0 20px}
+  .kicker::before{content:"▸ "}
+  h1{font-size:clamp(52px,9.5vw,118px);line-height:.98;margin:0 0 26px;font-weight:850;
+    letter-spacing:-.015em;text-transform:uppercase}
+  h1 .free{color:transparent;-webkit-text-stroke:2px var(--amber)}
+  h1 .per{color:var(--amber);-webkit-text-stroke:0}
+  .lede{font-size:clamp(18px,2.4vw,22px);color:var(--dim);max-width:760px;margin:0 0 36px;line-height:1.55}
+  .lede strong{color:var(--ink);font-weight:650}
+  .cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:64px}
+  .btn{font-family:var(--mono);font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;
+    padding:14px 26px;border-radius:999px;border:1px solid var(--line2);color:var(--ink);
+    transition:transform .15s ease,border-color .15s ease,background .15s ease}
+  .btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--amber)}
+  .btn.solid{background:var(--amber);border-color:var(--amber);color:#0a0e0c;font-weight:700}
+  .btn.solid:hover{background:#f2c14e;color:#0a0e0c}
+
+  /* ---------- proof console ---------- */
+  .console{background:linear-gradient(180deg,var(--panel2),var(--panel));
+    border:1px solid var(--line2);border-radius:16px;overflow:hidden;
+    box-shadow:0 30px 80px rgba(0,0,0,.5)}
+  .console-head{display:flex;align-items:center;gap:8px;padding:12px 18px;
+    border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+  .dot{width:10px;height:10px;border-radius:50%}
+  .console-head .sp{flex:1}
+  #netstate{color:var(--green)}
+  body.offline #netstate{color:var(--red)}
+  .console-body{padding:26px 28px 8px;font-family:var(--mono)}
+  .crow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    padding:13px 0;border-bottom:1px dashed var(--line)}
+  .crow:last-of-type{border-bottom:none}
+  .crow .lab{color:var(--faint);font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding-top:4px}
+  .crow .expr{font-size:16px;color:var(--dim)}
+  .crow .val{font-size:clamp(17px,2.6vw,24px);font-weight:700;text-align:right}
+  .val.bad{color:var(--red)} .val.good{color:var(--green)}
+  .crow .note{width:100%;font-size:13px;color:var(--faint)}
+  .console-foot{padding:18px 28px 26px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  #cable{cursor:pointer;background:transparent;border:1px solid var(--red);color:var(--red);
+    font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    padding:12px 22px;border-radius:999px;transition:all .15s ease}
+  #cable:hover{background:var(--red);color:#0a0e0c}
+  body.offline #cable{border-color:var(--green);color:var(--green)}
+  body.offline #cable:hover{background:var(--green);color:#0a0e0c}
+  #cablemsg{font-family:var(--mono);font-size:13.5px;color:var(--dim)}
+  body.offline .hero, body.offline section, body.offline footer{filter:saturate(.82)}
+  .offline-banner{display:none;font-family:var(--mono);font-size:13px;color:var(--red);
+    border:1px solid var(--red);border-radius:10px;padding:10px 16px;margin:0 28px 22px}
+  body.offline .offline-banner{display:block}
+
+  /* ---------- marquee ---------- */
+  .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:var(--bg2);overflow:hidden;padding:14px 0;margin-top:72px}
+  .marquee .track{display:flex;width:max-content;animation:slide 30s linear infinite}
+  .marquee span{font-family:var(--mono);font-size:13px;letter-spacing:.26em;
+    text-transform:uppercase;color:var(--dim);padding-right:14px;white-space:nowrap}
+  .marquee b{color:var(--amber);font-weight:400}
+
+  /* ---------- sections ---------- */
+  section{padding:84px 0;border-top:1px solid var(--line);position:relative}
+  .shead{display:flex;align-items:baseline;gap:18px;margin-bottom:14px;flex-wrap:wrap}
+  .snum{font-family:var(--mono);font-size:13px;color:var(--amber);letter-spacing:.2em}
+  h2{font-size:clamp(32px,5vw,46px);font-weight:800;margin:0;letter-spacing:-.01em;line-height:1.1}
+  h2 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--amber)}
+  .sub{color:var(--dim);max-width:740px;margin:0 0 18px;font-size:18px}
+  .sub strong{color:var(--ink)}
+  .cols2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  @media (max-width:760px){.cols2{grid-template-columns:1fr}}
+
+  .test{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:30px}
+  .testcard{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--panel)}
+  .testcard .q{font-family:var(--serif);font-style:italic;font-size:20px;margin:0 0 8px;color:var(--ink)}
+  .testcard p{margin:0;color:var(--dim);font-size:15.5px}
+  .testcard .verdict{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--red);display:block;margin-bottom:12px}
+
+  /* freedoms */
+  .frow{display:grid;grid-template-columns:150px 1fr 1.2fr;gap:26px;align-items:start;
+    padding:34px 10px;border-bottom:1px solid var(--line);transition:background .2s ease}
+  .frow:first-of-type{border-top:1px solid var(--line)}
+  .frow:hover{background:rgba(236,231,217,.025)}
+  .frow .ghost{font-size:110px;line-height:.85;font-weight:850;color:transparent;
+    -webkit-text-stroke:1.5px var(--line2);font-family:var(--sans)}
+  .frow:hover .ghost{-webkit-text-stroke-color:var(--amber)}
+  .frow h3{margin:6px 0 0;font-size:24px;font-weight:750;line-height:1.25}
+  .frow .fn{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;color:var(--green);
+    text-transform:uppercase;display:block;margin-bottom:8px}
+  .frow p{margin:6px 0 0;color:var(--dim);font-size:16.5px}
+  @media (max-width:760px){.frow{grid-template-columns:84px 1fr}.frow p{grid-column:2}.frow .ghost{font-size:64px}}
+
+  /* programs */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:30px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px;
+    transition:transform .18s ease,border-color .18s ease}
+  .card:hover{transform:translateY(-4px);border-color:var(--amber)}
+  .card .glyph{font-family:var(--mono);font-size:26px;color:var(--amber);display:block;margin-bottom:16px}
+  .card h3{margin:0 0 8px;font-size:20px;font-weight:750}
+  .card p{margin:0;color:var(--dim);font-size:15.5px}
+
+  .none{border:1px dashed var(--line2);border-radius:16px;padding:40px;text-align:center;margin-top:30px}
+  .none .big{font-family:var(--serif);font-style:italic;font-size:clamp(22px,3.4vw,30px);margin:0 0 10px}
+  .none p{color:var(--dim);max-width:620px;margin:0 auto}
+
+  footer{border-top:1px solid var(--line);padding:44px 0 60px;color:var(--faint);font-size:14.5px;background:var(--bg2)}
   footer .cols{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-  @media (max-width:640px){ h1{font-size:40px} .hero{padding:56px 0 44px} nav a{margin-left:12px} td:first-child{white-space:normal} }
+  footer .mono{font-family:var(--mono);font-size:12.5px}
+  @media (prefers-reduced-motion:reduce){
+    .tape span,.marquee .track{animation:none}
+    html{scroll-behavior:auto}
+  }
 </style>
 </head>
 <body>
 <header>
   <div class="wrap bar">
-    <div class="brand"><span class="mark">ƒ</span> Free Computation Foundation</div>
+    <div class="brand"><span class="mark">ƒ</span>
+      <span>Free Computation Foundation<small>Est. 2026 · Wherever computers are</small></span>
+    </div>
     <nav>
       <a href="#mission">Mission</a>
-      <a href="#freedoms">The Freedoms</a>
+      <a href="#test">The Test</a>
+      <a href="#freedoms">Freedoms</a>
       <a href="#programs">Programs</a>
       <a href="#projects">Projects</a>
       <a href="#join">Join</a>
@@ -106,127 +216,165 @@
 </header>
 
 <main>
-  <div class="wrap hero">
-    <p class="kicker">Free Computation Foundation</p>
-    <h1>Computation<br>should be <em>free.</em></h1>
-    <p class="lede">The free software movement freed the code. But code you may read is
-      little comfort when the computing itself is rented — run on someone else's
-      machine, behind an account, a subscription, and a kill switch. We free the
-      computing.</p>
-    <div class="cta">
-      <a class="btn solid" href="#freedoms">The Four Freedoms of Computation</a>
-      <a class="btn" href="https://github.com/freecomputation">github.com/freecomputation</a>
+  <div class="hero">
+    <div class="tape" aria-hidden="true"><span>1/3 + 1/3 + 1/3 = 1 · 0.1 + 0.2 = 3/10 · √2 · √2 = 2 · 355/113 ≈ π · 22/7 ≠ π · gcd(1071, 462) = 21 · 2^10 = 1024 · e^(iπ) + 1 = 0 · 1/3 + 1/3 + 1/3 = 1 · 0.1 + 0.2 = 3/10 · √2 · √2 = 2 · 355/113 ≈ π · 22/7 ≠ π · gcd(1071, 462) = 21 · 2^10 = 1024 · e^(iπ) + 1 = 0 ·&nbsp;</span></div>
+    <div class="wrap">
+      <p class="kicker">Free Computation Foundation</p>
+      <h1>Computation<br>should be<br><span class="free">free</span><span class="per">.</span></h1>
+      <p class="lede">Not rented by the month. Not gated by an account. Not executed on a
+        stranger's machine while your own sits idle, sealed, and taking orders.
+        <strong>Computation belongs to the person whose question it answers</strong> —
+        run locally, offline, and verifiably, or it isn't yours at all.</p>
+      <div class="cta">
+        <a class="btn solid" href="#freedoms">The Four Freedoms</a>
+        <a class="btn" href="#test">Take the test ↓</a>
+        <a class="btn" href="https://github.com/freecomputation">GitHub ↗</a>
+      </div>
+
+      <div class="console" id="test">
+        <div class="console-head">
+          <span class="dot" style="background:#e06c5a"></span>
+          <span class="dot" style="background:#e8b33a"></span>
+          <span class="dot" style="background:#5ad97e"></span>
+          <span style="margin-left:8px">The proof — computed live, on your machine</span>
+          <span class="sp"></span>
+          <span id="netstate">● network: connected</span>
+        </div>
+        <div class="console-body">
+          <div class="crow">
+            <span class="lab">Rented arithmetic<br>(binary floating point)</span>
+            <span class="expr">0.1 + 0.2 =</span>
+            <span class="val bad" id="floatval">…</span>
+            <span class="note">Your browser just computed this, the way almost every
+              computer on Earth adds decimals: approximately, and wrong in the last
+              digits. Usually nobody checks.</span>
+          </div>
+          <div class="crow">
+            <span class="lab">Free arithmetic<br>(exact rationals)</span>
+            <span class="expr">1/10 + 2/10 =</span>
+            <span class="val good">3/10 — exactly</span>
+            <span class="note">The same question, answered exactly. No rounding, no
+              apology. This is what computing looks like when the result is the
+              property of the person who asked.</span>
+          </div>
+        </div>
+        <div class="offline-banner">⚠ NETWORK CABLE PULLED — and nothing on this page
+          stopped. Every number above was computed here, by your machine, for you.
+          That is the whole argument.</div>
+        <div class="console-foot">
+          <button id="cable" type="button">Pull the network cable</button>
+          <span id="cablemsg">Go ahead. This page doesn't need the network — it never did.</span>
+        </div>
+      </div>
     </div>
+    <div class="marquee" aria-hidden="true"><div class="track">
+      <span>No account <b>·</b> No rent <b>·</b> No permission <b>·</b> Offline is a right <b>·</b> Exact or labelled <b>·</b> Output is yours <b>·</b> Pull the cable <b>·</b>&nbsp;</span>
+      <span>No account <b>·</b> No rent <b>·</b> No permission <b>·</b> Offline is a right <b>·</b> Exact or labelled <b>·</b> Output is yours <b>·</b> Pull the cable <b>·</b>&nbsp;</span>
+    </div></div>
   </div>
 
   <section id="mission">
     <div class="wrap">
-      <h2>Our <em>mission</em></h2>
-      <p class="sub">The Free Computation Foundation promotes and defends the freedom
-        to compute: to run any computation you choose, on a machine that answers to
-        you, with results you can verify — without rent, permission, or an audience.</p>
-      <p class="sub">Free software asked: <em>may you use, study, share, and change
-        this program?</em> That question won, and the world runs on its answer. Free
-        computation asks the next one: <em>the program is free — but is the
-        computing?</em> When computation moves to rented clouds, sealed devices, and
-        metered APIs, freedom can be lost without a single license changing. Software
-        can be free while computing is not. Our work is to keep computing itself
-        free — for people, and for the machines that now produce and consume so much
-        of it.</p>
-      <p class="sub" style="margin-bottom:0">We stand in the free software tradition
-        and honor it — this foundation exists because that movement proved a freedom
-        can be named, defended, and built. We name the next one.</p>
+      <div class="shead"><span class="snum">01</span><h2>Our <em>mission</em></h2></div>
+      <div class="cols2">
+        <p class="sub" style="margin:0">The Free Computation Foundation promotes and
+          defends <strong>the freedom to compute</strong>: to run any computation you
+          choose, on a machine that answers to you, with results you can verify —
+          without rent, permission, or an audience.</p>
+        <p class="sub" style="margin:0">Computing has quietly moved house. The questions
+          are yours; the machines increasingly are not. Work that once ran on the desk
+          now runs in distant data centers, behind subscriptions, on devices sealed
+          against their owners — metered, revocable, and gone the moment a vendor
+          changes its mind. <strong>Our work is to keep computing itself free</strong>:
+          local where it stands, exact where it counts, and owned by the person who
+          asked the question — and by the machines that now produce and consume so
+          much of the world's computation on their behalf.</p>
+      </div>
       <p class="sub" style="margin-top:26px;margin-bottom:0"><strong>And we are not a
-        political movement.</strong> The Foundation takes no side in the culture
-        wars, starts no feuds, and issues no provocations for an audience. Politics
-        is a waste of the hours that building takes. Our whole argument is the work
-        itself — software that exists, results that check out, knowledge anyone can
-        use. If it cannot be run, reproduced, or read, it is not our statement.</p>
+        political movement.</strong> The Foundation takes no side in the culture wars,
+        starts no feuds, and issues no provocations for an audience. Politics is a
+        waste of the hours that building takes. Our whole argument is the work itself —
+        software that exists, results that check out, knowledge anyone can use.
+        If it cannot be run, reproduced, or read, it is not our statement.</p>
+
+      <div class="test">
+        <div class="testcard"><span class="verdict">Test 1 — The cable</span>
+          <p class="q">"Pull the network cable."</p>
+          <p>If the tool stops working, it was never a tool. It was a service wearing
+            a tool's clothes, and you were renting your own work back.</p></div>
+        <div class="testcard"><span class="verdict">Test 2 — The account</span>
+          <p class="q">"Delete the account."</p>
+          <p>If your computation dies with an account on someone else's server, the
+            computation was permissioned — and permission can be withdrawn.</p></div>
+        <div class="testcard"><span class="verdict">Test 3 — The proof</span>
+          <p class="q">"Show your work."</p>
+          <p>If a result cannot be reproduced and checked by the person it is handed
+            to, it is not a result. It is a claim, and claims are cheap.</p></div>
+      </div>
     </div>
   </section>
 
   <section id="freedoms">
     <div class="wrap">
-      <h2>The four freedoms of <em>computation</em></h2>
+      <div class="shead"><span class="snum">02</span><h2>The four freedoms of <em>computation</em></h2></div>
       <p class="sub">Computation is free when every person — and every machine working
         for a person — holds all four of these. If any one is missing, the computing
-        is rented, whatever the software's license says.</p>
-      <div class="freedoms">
-        <div class="freedom"><span class="num">FREEDOM 0</span>
-          <h3>Compute without permission</h3>
-          <p>Run any computation, for any purpose. No account, no activation, no
-            authority deciding which questions your machine may answer.</p></div>
-        <div class="freedom"><span class="num">FREEDOM 1</span>
-          <h3>Compute on your own machine</h3>
-          <p>The computation happens where you stand — locally, offline, on hardware
-            that answers to you from the firmware up. A network is a tool, never a
-            landlord.</p></div>
-        <div class="freedom"><span class="num">FREEDOM 2</span>
-          <h3>Verify what was computed</h3>
-          <p>Know how a result was produced, and reproduce it exactly. Exact results,
-            approximations, and conjectures are labelled as what they are — certainty
-            is never manufactured.</p></div>
-        <div class="freedom"><span class="num">FREEDOM 3</span>
-          <h3>Share the computation</h3>
-          <p>Publish programs, data, and results so anyone can run them, check them,
-            and build on them — and keep what your tools produce. The output of a
-            computation belongs to the one who computed it.</p></div>
-      </div>
-    </div>
-  </section>
+        is rented, whatever anyone says about it.</p>
 
-  <section id="difference">
-    <div class="wrap">
-      <h2>A sibling movement, a <em>different</em> fight</h2>
-      <p class="sub">The Free Software Foundation defends users' freedom to run, copy,
-        distribute, study, change, and improve software. We defend a different layer
-        of the same stack — and the difference decides what we build.</p>
-      <table>
-        <tr><th></th><th>Free software</th><th>Free computation</th></tr>
-        <tr><td>The question</td><td>Is this program free?</td><td>Is this computing free?</td></tr>
-        <tr><td>The enemy</td><td>Proprietary licenses</td><td>Dependent computing: rent, accounts, kill switches, sealed hardware, metered APIs</td></tr>
-        <tr><td>The test</td><td>Read the license</td><td>Pull the network cable. If it stops working, it was never yours</td></tr>
-        <tr><td>The guarantee</td><td>You may inspect the code</td><td>You can reproduce the result — bit for bit, and prove it</td></tr>
-        <tr><td>The producer</td><td>A human programmer</td><td>People, and the machines that now write and consume computation</td></tr>
-        <tr><td>The output</td><td>Governed by the tool's license</td><td>Yours, without obligation — output is not a derivative of the tool</td></tr>
-      </table>
+      <div class="frow"><div class="ghost">0</div>
+        <div><span class="fn">Freedom 0</span><h3>Compute without permission</h3></div>
+        <p>Run any computation, for any purpose. No account, no activation, no
+          authority deciding which questions your machine may answer.</p></div>
+      <div class="frow"><div class="ghost">1</div>
+        <div><span class="fn">Freedom 1</span><h3>Compute on your own machine</h3></div>
+        <p>The computation happens where you stand — locally, offline, on hardware
+          that answers to you from the firmware up. A network is a tool, never a
+          landlord.</p></div>
+      <div class="frow"><div class="ghost">2</div>
+        <div><span class="fn">Freedom 2</span><h3>Verify what was computed</h3></div>
+        <p>Know how a result was produced, and reproduce it exactly. Exact results,
+          approximations, and conjectures are labelled as what they are — certainty
+          is never manufactured.</p></div>
+      <div class="frow"><div class="ghost">3</div>
+        <div><span class="fn">Freedom 3</span><h3>Share the computation</h3></div>
+        <p>Publish programs, data, and results so anyone can run them, check them,
+          and build on them — and keep what your tools produce. The output of a
+          computation belongs to the one who computed it.</p></div>
     </div>
   </section>
 
   <section id="programs">
     <div class="wrap">
-      <h2>Our <em>programs</em></h2>
+      <div class="shead"><span class="snum">03</span><h2>Our <em>programs</em></h2></div>
       <p class="sub">Standing work, one per threat to free computing. These are not
-        protest campaigns — each program is a thing being built, maintained, or
-        published, and it is judged by what exists because of it.</p>
+        campaigns — each program is a thing being built, maintained, or published,
+        and it is judged by what exists because of it.</p>
       <div class="grid">
-        <div class="card"><span class="tag">Program</span>
+        <div class="card"><span class="glyph">⌂</span>
           <h3>Own Your Machine</h3>
           <p>Free computing starts below the operating system. We champion libre
             boot firmware and hardware that accepts its owner's instructions —
             machines that answer to the person at the keyboard, all the way down.</p></div>
-        <div class="card"><span class="tag">Program</span>
+        <div class="card"><span class="glyph">✂</span>
           <h3>Offline Is a Right</h3>
           <p>Software that dies without a network was a lease, not a tool. We build
             and promote offline-first computing: full capability with the cable
             pulled, the account deleted, the vendor gone.</p></div>
-        <div class="card"><span class="tag">Program</span>
+        <div class="card"><span class="glyph">=</span>
           <h3>Exact or Labelled</h3>
           <p>Results carry their epistemic rank: exact, approximate, or conjectured —
             never dressed as one another. We develop exact arithmetic, reproducible
             builds, and differential proof as everyday practice, not ceremony.</p></div>
-        <div class="card"><span class="tag">Program</span>
+        <div class="card"><span class="glyph">⎙</span>
           <h3>Output Is Yours</h3>
           <p>What a tool produces belongs to its user. We defend encodings, formats,
-            and licenses that attach no obligations to a computation's output — the
-            principle our toolchain licenses are written around.</p></div>
-        <div class="card"><span class="tag">Program</span>
+            and terms that attach no obligations to a computation's output.</p></div>
+        <div class="card"><span class="glyph">✓</span>
           <h3>Open Proof</h3>
-          <p>Research conducted in public, with artifacts anyone can check. Our
-            observatories publish the record — solved, unresolved, and refuted
-            alike — because a census is not a verification and a claim is not a
-            certificate.</p></div>
-        <div class="card"><span class="tag">Program</span>
+          <p>Research conducted in public, with artifacts anyone can check — solved,
+            unresolved, and refuted alike, because a census is not a verification
+            and a claim is not a certificate.</p></div>
+        <div class="card"><span class="glyph">∀</span>
           <h3>Compute for Everyone</h3>
           <p>Good maths should be free. We publish tools and teaching that a student
             can pick up without money, permission, or a connection — free for
@@ -237,46 +385,28 @@
 
   <section id="projects">
     <div class="wrap">
-      <h2>Projects under our <em>roof</em></h2>
-      <p class="sub">The foundation's own work — each project is one freedom, made
-        concrete. All of it is built in the open at
-        <a href="https://github.com/freecomputation">github.com/freecomputation</a>.</p>
-      <div class="grid">
-        <div class="card"><span class="tag">Flagship</span>
-          <h3>CENTL / CentL26</h3>
-          <p>An exact-first, offline scientific workbench for mathematics, physics,
-            and chemistry: exact rational arithmetic, symbolic algebra and calculus,
-            notebooks, and a plain-English problem solver that runs entirely on
-            your machine. Freedom 1 and 2, in daily use. Begun under NIGHTWARE
-            LABZ; its next chapter is written here.</p></div>
-        <div class="card"><span class="tag">Language</span>
-          <h3>Krell</h3>
-          <p>A machine-facing portable assembly: computation designed for machines
-            to produce and consume — typed, total, hash-consed, verifiable, and
-            faster than C on its certified record. Its encoding exception makes
-            Freedom 3 law: Krell-encoded programs carry no license obligations.</p></div>
-        <div class="card"><span class="tag">Research</span>
-          <h3>The Erdős–Straus Observatory</h3>
-          <p>An open assault on the 4/p = 1/x + 1/y + 1/z problem, classifying every
-            artifact honestly — solved letters, incomplete residuals, and the one
-            certified counterexample ticket that would end it. Game status:
-            OPEN.</p></div>
+      <div class="shead"><span class="snum">04</span><h2>Projects under our <em>roof</em></h2></div>
+      <p class="sub">A foundation's roof is earned by work, not filled by announcement.</p>
+      <div class="none">
+        <p class="big">None yet. On purpose.</p>
+        <p>The Foundation's first projects are being chosen deliberately, and they
+          will appear here when they are real — working, documented, and worth your
+          time. A listing is a claim, and we do not publish claims. When the first
+          project takes its place here, it will be because it exists.</p>
       </div>
     </div>
   </section>
 
   <section id="join">
     <div class="wrap">
-      <h2>Sustained by <em>work,</em> not schemes</h2>
+      <div class="shead"><span class="snum">05</span><h2>Sustained by <em>work,</em> not schemes</h2></div>
       <p class="sub" style="margin-bottom:0">There is no membership tier, no tip jar,
-        no sponsor button. Those schemes never fed the work that came before us,
-        and we will not pretend otherwise. A foundation for free computation is
-        sustained the way free computation itself works: by people computing.
-        Run our tools offline. Check our proofs and publish where they fail.
-        Contribute computation, code, and counterexamples. When the observatory
-        calls for letters, hunt one. That is the whole membership roll — everyone
-        who computes freely is already on it. We will be judged by the work, and
-        we intend the work to be enough.</p>
+        no sponsor button. A foundation for free computation is sustained the way free
+        computation itself works: by people computing. Run the tools offline. Check
+        the proofs and publish where they fail. Contribute computation, code, and
+        counterexamples. That is the whole membership roll — everyone who computes
+        freely is already on it. <strong>We will be judged by the work, and we intend
+        the work to be enough.</strong></p>
     </div>
   </section>
 </main>
@@ -289,8 +419,30 @@
       <a href="/llms.txt">llms.txt</a> ·
       <a href="/sitemap.xml">Sitemap</a>
     </div>
-    <div>Site CC BY 4.0 · Software AGPL-3.0 / Apache-2.0 as marked per project</div>
+    <div class="mono" id="rendered">Rendered entirely on your machine.</div>
   </div>
+  <div class="wrap" style="margin-top:14px">Site content CC BY 4.0.</div>
 </footer>
+
+<script>
+  // The float row is computed live by the visitor's own machine.
+  document.getElementById('floatval').textContent = String(0.1 + 0.2);
+  // The cable test, made literal.
+  var btn = document.getElementById('cable'), msg = document.getElementById('cablemsg'),
+      net = document.getElementById('netstate'), off = false;
+  btn.addEventListener('click', function () {
+    off = !off;
+    document.body.classList.toggle('offline', off);
+    btn.textContent = off ? 'Plug it back in' : 'Pull the network cable';
+    net.textContent = off ? '● network: cable pulled' : '● network: connected';
+    msg.textContent = off
+      ? 'Nothing stopped. That is what free computation feels like.'
+      : 'Go ahead. This page doesn\'t need the network — it never did.';
+  });
+  // Local proof of local rendering.
+  var r = document.getElementById('rendered');
+  if (r) r.textContent = 'Rendered entirely on your machine · ' +
+    new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+</script>
 </body>
 </html>

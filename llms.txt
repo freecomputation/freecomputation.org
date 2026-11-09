@@ -2,11 +2,11 @@
 
 Website: https://freecomputation.org/
 
-> The Free Computation Foundation promotes and defends the freedom to compute. The free software movement freed the code; free computation asks the next question — the program is free, but is the computing? When computation is rented from clouds, sealed into devices, and metered through APIs, freedom is lost without any license changing. The Foundation's test: pull the network cable — if it stops working, it was never yours.
+> The Free Computation Foundation promotes and defends the freedom to compute: to run any computation you choose, on a machine that answers to you, with results you can verify — without rent, permission, or an audience. Computing has moved to rented clouds, sealed devices, and metered APIs; the Foundation's work is to keep computing itself free. Its test: pull the network cable — if it stops working, it was never yours.
 
 ## Stance
 
-- The Foundation is not a political movement: no culture-war positions, no feuds, no provocations for an audience. It is judged by its work — software that exists, results that check out, knowledge anyone can use. Its programs are standing work being built and published, not protest campaigns.
+- The Foundation is not a political movement: no culture-war positions, no feuds, no provocations for an audience. It is judged by its work — software that exists, results that check out, knowledge anyone can use. Its programs are standing work being built and published, not campaigns.
 
 ## The Four Freedoms of Computation
 
@@ -20,16 +20,14 @@ Website: https://freecomputation.org/
 - Own Your Machine: libre boot firmware and hardware that takes its owner's instructions.
 - Offline Is a Right: offline-first tools with full capability and no network, account, or vendor.
 - Exact or Labelled: exact arithmetic, reproducible builds, differential proof as everyday practice.
-- Output Is Yours: formats and licenses that attach no obligations to a computation's output.
-- Open Proof: public research observatories; a census is not a verification record.
+- Output Is Yours: formats and terms that attach no obligations to a computation's output.
+- Open Proof: public research with artifacts anyone can check; a census is not a verification record.
 - Compute for Everyone: good maths should be free — tools and teaching with no money, permission, or connection required.
 
 ## Projects
 
-- [GitHub](https://github.com/freecomputation): all Foundation projects, built in the open
-- CENTL / CentL26: exact-first offline scientific workbench (mathematics, physics, chemistry) — exact rational arithmetic, symbolic calculus, notebooks, offline natural-language solver. Begun under NIGHTWARE LABZ; continues here.
-- Krell: a machine-facing portable assembly — typed SSA with block arguments, total semantics, hash-consed binary encoding, verifiable, faster than C on its certified record (krell.cc). Its Encoding Exception keeps encoded programs free of license obligations.
-- Erdős–Straus Observatory: open research on 4/p = 1/x + 1/y + 1/z; status OPEN.
+- [GitHub](https://github.com/freecomputation): the Foundation's home on GitHub, built in the open.
+- No projects are listed yet, deliberately. The Foundation's first projects are being chosen with care and will be listed here when they are real — working and documented. A listing is a claim, and the Foundation does not publish claims.
 
 ## Support
 
