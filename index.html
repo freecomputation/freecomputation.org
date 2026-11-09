@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Computation Foundation — Computation should be free</title>
+<meta name="description" content="The Free Computation Foundation promotes the freedom to compute: to run any computation, on your own machine, offline, verifiably, and without rent or permission. The free software movement freed the code. We free the computing.">
+<link rel="canonical" href="https://freecomputation.org/">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f7f3ea">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Computation Foundation">
+<meta property="og:title" content="Free Computation Foundation — Computation should be free">
+<meta property="og:description" content="The free software movement freed the code. We free the computing: local, offline, verifiable, unrented.">
+<meta property="og:url" content="https://freecomputation.org/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Computation Foundation">
+<meta name="twitter:description" content="The freedom to compute: on your own machine, offline, verifiably, without rent or permission.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314352b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23f7f3ea' text-anchor='middle'%3E%C6%92%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Free Computation Foundation",
+      "url": "https://freecomputation.org/",
+      "sameAs": ["https://github.com/freecomputation"],
+      "slogan": "Computation should be free.",
+      "description": "A foundation promoting the freedom to compute: computation that runs on the user's own machine, offline, with verifiable results, and no rent, account, or permission required."
+    },
+    {
+      "@type": "WebSite",
+      "name": "Free Computation Foundation",
+      "url": "https://freecomputation.org/"
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --paper:#f7f3ea; --paper2:#efe8d8; --ink:#1c2420; --dim:#5c665f;
+    --line:#d8d0bc; --accent:#14352b; --accent2:#b07d2b; --card:#fffdf7;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:Georgia,'Iowan Old Style','Times New Roman',serif;
+    font-size:18px;line-height:1.65}
+  a{color:var(--accent);text-decoration-color:var(--accent2);text-underline-offset:3px}
+  a:hover{color:#000}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);background:var(--paper)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:bold;letter-spacing:.02em}
+  .mark{width:40px;height:40px;border-radius:9px;background:var(--accent);color:var(--paper);
+    display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1}
+  nav a{margin-left:20px;font-size:15px;font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif}
+  .hero{padding:84px 0 64px;text-align:center}
+  .kicker{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:13px;
+    letter-spacing:.28em;text-transform:uppercase;color:var(--accent2);margin:0 0 18px}
+  h1{font-size:56px;line-height:1.08;margin:0 0 20px;font-weight:normal}
+  h1 em{font-style:italic;color:var(--accent)}
+  .lede{font-size:21px;color:var(--dim);max-width:740px;margin:0 auto 34px}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:16px;
+    padding:12px 26px;border-radius:999px;border:1px solid var(--accent);text-decoration:none}
+  .btn.solid{background:var(--accent);color:var(--paper)}
+  .btn.solid:hover{background:#0c241c;color:var(--paper)}
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:34px;font-weight:normal;margin:0 0 10px}
+  h2 em{color:var(--accent);font-style:italic}
+  .sub{color:var(--dim);max-width:720px;margin:0 0 34px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{margin:0 0 8px;font-size:21px;font-weight:normal}
+  .card p{margin:0;color:var(--dim);font-size:16.5px}
+  .card .tag{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:12px;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);display:block;margin-bottom:10px}
+  .freedoms{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .freedom{background:var(--accent);color:#e9e2cf;border-radius:14px;padding:26px}
+  .freedom .num{font-size:13px;letter-spacing:.2em;color:#c9a44e;font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif}
+  .freedom h3{margin:8px 0;font-size:21px;font-weight:normal;color:#fff}
+  .freedom p{margin:0;font-size:16px;color:#cfd6c9}
+  table{width:100%;border-collapse:collapse;font-size:16.5px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:ui-sans-system,-apple-system,'Segoe UI',sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)}
+  td:first-child{font-style:italic;white-space:nowrap}
+  footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--dim);font-size:15.5px}
+  footer .cols{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  @media (max-width:640px){ h1{font-size:40px} .hero{padding:56px 0 44px} nav a{margin-left:12px} td:first-child{white-space:normal} }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <div class="brand"><span class="mark">ƒ</span> Free Computation Foundation</div>
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="#freedoms">The Freedoms</a>
+      <a href="#programs">Programs</a>
+      <a href="#projects">Projects</a>
+      <a href="#join">Join</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="kicker">Free Computation Foundation</p>
+    <h1>Computation<br>should be <em>free.</em></h1>
+    <p class="lede">The free software movement freed the code. But code you may read is
+      little comfort when the computing itself is rented — run on someone else's
+      machine, behind an account, a subscription, and a kill switch. We free the
+      computing.</p>
+    <div class="cta">
+      <a class="btn solid" href="#freedoms">The Four Freedoms of Computation</a>
+      <a class="btn" href="https://github.com/freecomputation">github.com/freecomputation</a>
+    </div>
+  </div>
+
+  <section id="mission">
+    <div class="wrap">
+      <h2>Our <em>mission</em></h2>
+      <p class="sub">The Free Computation Foundation promotes and defends the freedom
+        to compute: to run any computation you choose, on a machine that answers to
+        you, with results you can verify — without rent, permission, or an audience.</p>
+      <p class="sub">Free software asked: <em>may you use, study, share, and change
+        this program?</em> That question won, and the world runs on its answer. Free
+        computation asks the next one: <em>the program is free — but is the
+        computing?</em> When computation moves to rented clouds, sealed devices, and
+        metered APIs, freedom can be lost without a single license changing. Software
+        can be free while computing is not. Our work is to keep computing itself
+        free — for people, and for the machines that now produce and consume so much
+        of it.</p>
+      <p class="sub" style="margin-bottom:0">We stand in the free software tradition
+        and honor it — this foundation exists because that movement proved a freedom
+        can be named, defended, and built. We name the next one.</p>
+      <p class="sub" style="margin-top:26px;margin-bottom:0"><strong>And we are not a
+        political movement.</strong> The Foundation takes no side in the culture
+        wars, starts no feuds, and issues no provocations for an audience. Politics
+        is a waste of the hours that building takes. Our whole argument is the work
+        itself — software that exists, results that check out, knowledge anyone can
+        use. If it cannot be run, reproduced, or read, it is not our statement.</p>
+    </div>
+  </section>
+
+  <section id="freedoms">
+    <div class="wrap">
+      <h2>The four freedoms of <em>computation</em></h2>
+      <p class="sub">Computation is free when every person — and every machine working
+        for a person — holds all four of these. If any one is missing, the computing
+        is rented, whatever the software's license says.</p>
+      <div class="freedoms">
+        <div class="freedom"><span class="num">FREEDOM 0</span>
+          <h3>Compute without permission</h3>
+          <p>Run any computation, for any purpose. No account, no activation, no
+            authority deciding which questions your machine may answer.</p></div>
+        <div class="freedom"><span class="num">FREEDOM 1</span>
+          <h3>Compute on your own machine</h3>
+          <p>The computation happens where you stand — locally, offline, on hardware
+            that answers to you from the firmware up. A network is a tool, never a
+            landlord.</p></div>
+        <div class="freedom"><span class="num">FREEDOM 2</span>
+          <h3>Verify what was computed</h3>
+          <p>Know how a result was produced, and reproduce it exactly. Exact results,
+            approximations, and conjectures are labelled as what they are — certainty
+            is never manufactured.</p></div>
+        <div class="freedom"><span class="num">FREEDOM 3</span>
+          <h3>Share the computation</h3>
+          <p>Publish programs, data, and results so anyone can run them, check them,
+            and build on them — and keep what your tools produce. The output of a
+            computation belongs to the one who computed it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="difference">
+    <div class="wrap">
+      <h2>A sibling movement, a <em>different</em> fight</h2>
+      <p class="sub">The Free Software Foundation defends users' freedom to run, copy,
+        distribute, study, change, and improve software. We defend a different layer
+        of the same stack — and the difference decides what we build.</p>
+      <table>
+        <tr><th></th><th>Free software</th><th>Free computation</th></tr>
+        <tr><td>The question</td><td>Is this program free?</td><td>Is this computing free?</td></tr>
+        <tr><td>The enemy</td><td>Proprietary licenses</td><td>Dependent computing: rent, accounts, kill switches, sealed hardware, metered APIs</td></tr>
+        <tr><td>The test</td><td>Read the license</td><td>Pull the network cable. If it stops working, it was never yours</td></tr>
+        <tr><td>The guarantee</td><td>You may inspect the code</td><td>You can reproduce the result — bit for bit, and prove it</td></tr>
+        <tr><td>The producer</td><td>A human programmer</td><td>People, and the machines that now write and consume computation</td></tr>
+        <tr><td>The output</td><td>Governed by the tool's license</td><td>Yours, without obligation — output is not a derivative of the tool</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="wrap">
+      <h2>Our <em>programs</em></h2>
+      <p class="sub">Standing work, one per threat to free computing. These are not
+        protest campaigns — each program is a thing being built, maintained, or
+        published, and it is judged by what exists because of it.</p>
+      <div class="grid">
+        <div class="card"><span class="tag">Program</span>
+          <h3>Own Your Machine</h3>
+          <p>Free computing starts below the operating system. We champion libre
+            boot firmware and hardware that accepts its owner's instructions —
+            machines that answer to the person at the keyboard, all the way down.</p></div>
+        <div class="card"><span class="tag">Program</span>
+          <h3>Offline Is a Right</h3>
+          <p>Software that dies without a network was a lease, not a tool. We build
+            and promote offline-first computing: full capability with the cable
+            pulled, the account deleted, the vendor gone.</p></div>
+        <div class="card"><span class="tag">Program</span>
+          <h3>Exact or Labelled</h3>
+          <p>Results carry their epistemic rank: exact, approximate, or conjectured —
+            never dressed as one another. We develop exact arithmetic, reproducible
+            builds, and differential proof as everyday practice, not ceremony.</p></div>
+        <div class="card"><span class="tag">Program</span>
+          <h3>Output Is Yours</h3>
+          <p>What a tool produces belongs to its user. We defend encodings, formats,
+            and licenses that attach no obligations to a computation's output — the
+            principle our toolchain licenses are written around.</p></div>
+        <div class="card"><span class="tag">Program</span>
+          <h3>Open Proof</h3>
+          <p>Research conducted in public, with artifacts anyone can check. Our
+            observatories publish the record — solved, unresolved, and refuted
+            alike — because a census is not a verification and a claim is not a
+            certificate.</p></div>
+        <div class="card"><span class="tag">Program</span>
+          <h3>Compute for Everyone</h3>
+          <p>Good maths should be free. We publish tools and teaching that a student
+            can pick up without money, permission, or a connection — free for
+            science, in every sense of free.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects under our <em>roof</em></h2>
+      <p class="sub">The foundation's own work — each project is one freedom, made
+        concrete. All of it is built in the open at
+        <a href="https://github.com/freecomputation">github.com/freecomputation</a>.</p>
+      <div class="grid">
+        <div class="card"><span class="tag">Flagship</span>
+          <h3>CENTL / CentL26</h3>
+          <p>An exact-first, offline scientific workbench for mathematics, physics,
+            and chemistry: exact rational arithmetic, symbolic algebra and calculus,
+            notebooks, and a plain-English problem solver that runs entirely on
+            your machine. Freedom 1 and 2, in daily use. Begun under NIGHTWARE
+            LABZ; its next chapter is written here.</p></div>
+        <div class="card"><span class="tag">Language</span>
+          <h3>Krell</h3>
+          <p>A machine-facing portable assembly: computation designed for machines
+            to produce and consume — typed, total, hash-consed, verifiable, and
+            faster than C on its certified record. Its encoding exception makes
+            Freedom 3 law: Krell-encoded programs carry no license obligations.</p></div>
+        <div class="card"><span class="tag">Research</span>
+          <h3>The Erdős–Straus Observatory</h3>
+          <p>An open assault on the 4/p = 1/x + 1/y + 1/z problem, classifying every
+            artifact honestly — solved letters, incomplete residuals, and the one
+            certified counterexample ticket that would end it. Game status:
+            OPEN.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="wrap">
+      <h2>Sustained by <em>work,</em> not schemes</h2>
+      <p class="sub" style="margin-bottom:0">There is no membership tier, no tip jar,
+        no sponsor button. Those schemes never fed the work that came before us,
+        and we will not pretend otherwise. A foundation for free computation is
+        sustained the way free computation itself works: by people computing.
+        Run our tools offline. Check our proofs and publish where they fail.
+        Contribute computation, code, and counterexamples. When the observatory
+        calls for letters, hunt one. That is the whole membership roll — everyone
+        who computes freely is already on it. We will be judged by the work, and
+        we intend the work to be enough.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>Free Computation Foundation — <em>computation should be free.</em></div>
+    <div>
+      <a href="https://github.com/freecomputation">GitHub</a> ·
+      <a href="/llms.txt">llms.txt</a> ·
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+    <div>Site CC BY 4.0 · Software AGPL-3.0 / Apache-2.0 as marked per project</div>
+  </div>
+</footer>
+</body>
+</html>
