@@ -1,6 +1,6 @@
 # freecomputation.org
 
-The website of the **Free Computation Foundation**.
+The website of the **Free Computation**.
 
 *Computation should be free* — run on your own machine, offline, verifiably,
 without rent, accounts, or permission. The site presents the mission, the
