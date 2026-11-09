@@ -12,10 +12,9 @@ projects are announced when they are real).
 
 A static site with no build step and no external requests:
 
-- `index.html` — the whole site (self-contained CSS/JS, inline SVG favicon,
-  JSON-LD). Its hero proof is computed live by the visitor's own browser, and
-  its "pull the network cable" demonstration works because nothing on the page
-  needs the network.
+- `index.html` — the whole site: a static page with no JavaScript at all,
+  in the old-school manner — white page, black text, plain links, minimal
+  self-contained CSS. No buttons, no header bar, no logo mark.
 - `robots.txt`, `sitemap.xml`, `llms.txt` — the discovery pack
 - `_headers` — security headers (HSTS, CSP, frame denial, nosniff, referrer
   policy); honored by Cloudflare Pages-style hosts, ignored by GitHub Pages
@@ -35,8 +34,8 @@ its Cloudflare Tunnel — it rejoins when its origin machine returns. The
 repo's AGPL-3.0 LICENSE sits alongside these files; do not overwrite it.
 
 Verify after any deploy by probing the live addresses for the current
-markers — the hero line "Computation should be free." and the live-proof
-console ("3/10 — exactly") — on `/`, plus `/robots.txt`, `/sitemap.xml`,
+markers — the line "Computation should be free." and the heading "The Four
+Freedoms of Computation" — on `/`, plus `/robots.txt`, `/sitemap.xml`,
 and `/llms.txt`. A 200 without the markers is a stale artifact, not this
 site.
 
