@@ -2,18 +2,18 @@
 
 Website: https://freecomputation.org/
 
-> The Free Computation Foundation promotes and defends the freedom to compute: to run any computation you choose, on a machine that answers to you, with results you can verify — without rent, permission, or an audience. Computing has moved to rented clouds, sealed devices, and metered APIs; the Foundation's work is to keep computing itself free. Its test: pull the network cable — if it stops working, it was never yours.
+> The Free Computation Foundation promotes and defends the freedom to compute: to run any computation you choose, on a machine that answers to you, with results you can verify - without rent, permission, or an audience. Computing has moved to rented clouds, sealed devices, and metered APIs; the Foundation's work is to keep computing itself free. Its test: pull the network cable - if it stops working, it was never yours.
 
 ## Stance
 
-- The Foundation is not a political movement: no culture-war positions, no feuds, no provocations for an audience. It is judged by its work — software that exists, results that check out, knowledge anyone can use. Its programs are standing work being built and published, not campaigns.
+- The Foundation is not a political movement: no culture-war positions, no feuds, no provocations for an audience. It is judged by its work - software that exists, results that check out, knowledge anyone can use. Its programs are standing work being built and published, not campaigns.
 
 ## The Four Freedoms of Computation
 
-- Freedom 0 — Compute without permission: run any computation, for any purpose; no account, activation, or authority.
-- Freedom 1 — Compute on your own machine: locally, offline, on hardware that answers to you from the firmware up.
-- Freedom 2 — Verify what was computed: reproduce results exactly; exact results, approximations, and conjectures are always labelled as which they are. Certainty is never manufactured.
-- Freedom 3 — Share the computation: publish programs, data, and results for anyone to run and check; a computation's output belongs to the one who computed it, without obligation.
+- Freedom 0 - Compute without permission: run any computation, for any purpose; no account, activation, or authority.
+- Freedom 1 - Compute on your own machine: locally, offline, on hardware that answers to you from the firmware up.
+- Freedom 2 - Verify what was computed: reproduce results exactly; exact results, approximations, and conjectures are always labelled as which they are. Certainty is never manufactured.
+- Freedom 3 - Share the computation: publish programs, data, and results for anyone to run and check; a computation's output belongs to the one who computed it, without obligation.
 
 ## Programs
 
@@ -22,12 +22,14 @@ Website: https://freecomputation.org/
 - Exact or Labelled: exact arithmetic, reproducible builds, differential proof as everyday practice.
 - Output Is Yours: formats and terms that attach no obligations to a computation's output.
 - Open Proof: public research with artifacts anyone can check; a census is not a verification record.
-- Compute for Everyone: good maths should be free — tools and teaching with no money, permission, or connection required.
+- Compute for Everyone: good maths should be free - tools and teaching with no money, permission, or connection required.
 
 ## Projects
 
 - [GitHub](https://github.com/freecomputation): the Foundation's home on GitHub, built in the open.
-- No projects are listed yet, deliberately. The Foundation's first projects are being chosen with care and will be listed here when they are real — working and documented. A listing is a claim, and the Foundation does not publish claims.
+- [idem](https://github.com/freecomputation/idem): the system. A small sealed seed grows the system on the machine from material aboard, every grown structure carrying a receipt; software and knowledge arrive as signed edition capsules accepted by reproduction. It contains the grower, the broker (intelligence proposes, the owner disposes), and the runner (grown code executed metered, with no ambient authority). Bedrock: FreeBSD.
+- [Umiak](https://github.com/freecomputation/umiak): idem's browser, standalone first, running on the systems people already have. Fully functional offline: Wikipedia, books, and documentation aboard in ZIM and EPUB, maps in PMTiles; networking included as a supply line, never a requirement; no accounts, no telemetry.
+- [Siuti](https://github.com/freecomputation/siuti): an ear for the radio spectrum - a passive listening post for one inexpensive RTL-SDR receiver, built on the same principles. In design.
 
 ## Support
 
