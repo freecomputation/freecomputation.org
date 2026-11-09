@@ -1,12 +1,12 @@
 # freecomputation.org
 
-The website of **Free Computation**.
+The website of the **Free Computation Foundation**.
 
 *Computation should be free* — run on your own machine, offline, verifiably,
 without rent, accounts, or permission. The site presents the mission, the
 Foundation's three tests for dependent computing, the Four Freedoms of
-Computation, its programs, and its projects (none listed yet — by design;
-projects are announced when they are real).
+Computation, its programs, and its projects - idem, Umiak, and Siuti,
+listed now that they are real: working, documented, and checkable.
 
 ## What this is
 
